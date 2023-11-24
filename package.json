@@ -35,7 +35,6 @@
     "@types/geojson": "^7946.0.13",
     "coveralls": "^3.1.1",
     "fuzzer": "^0.2.1",
-    "geojson": "^0.5.0",
     "glob": "^7.2.0",
     "nyc": "^15.1.0",
     "rollup": "^4.5.2",
