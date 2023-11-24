@@ -3,3 +3,12 @@ coverage/
 npm-debug.log
 .nyc_output/
 .vscode
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

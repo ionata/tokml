@@ -18,9 +18,7 @@
     "geo",
     "maps"
   ],
-  "bin": {
-    "tokml": "tokml"
-  },
+  "bin": "tokml",
   "author": "Kristofor Carle",
   "license": "BSD-2-Clause",
   "devDependencies": {
