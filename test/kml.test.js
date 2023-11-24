@@ -1,9 +1,11 @@
-var test = require('tap').test,
-    fs = require('fs'),
-    glob = require('glob'),
-    fuzzer = require('fuzzer'),
-    path = require('path'),
-    tokml = require('../');
+import { test } from 'tap';
+import fs from 'node:fs';
+import glob from 'glob';
+import fuzzer from 'fuzzer';
+import path from 'node:path';
+import tokml from '../lib/index.js';
+
+const __dirname = path.resolve(path.join(path.dirname(''), 'test'));
 
 test('tokml', function(t) {
 
