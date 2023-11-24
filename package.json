@@ -1,12 +1,20 @@
 {
   "name": "@maphubs/tokml",
-  "version": "0.6.1",
-  "description": "convert geojson to kml",
-  "main": "index.js",
+  "version": "0.7.0",
+  "description": "Convert GeoJSON to KML",
+  "main": "dist/tokml.cjs",
+  "module": "dist/tokml.es.mjs",
+  "exports": {
+    "require": "./dist/tokml.cjs",
+    "default": "./dist/tokml.es.mjs"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "rollup -c rollup.config.mjs",
     "test": "tap test/*.js",
-    "build": "browserify -s tokml index.js > tokml.js",
-    "cov": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "cov:publish": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -22,12 +30,21 @@
   "author": "Kristofor Carle",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/geojson": "^7946.0.13",
     "browserify": "^16.5.2",
     "coveralls": "^3.1.1",
     "fuzzer": "^0.2.1",
+    "geojson": "^0.5.0",
     "glob": "^7.2.0",
     "nyc": "^15.1.0",
-    "tap": "^15.1.6"
+    "rollup": "^4.5.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "tap": "^15.1.6",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.2"
   },
   "dependencies": {
     "minimist": "^1.2.5",

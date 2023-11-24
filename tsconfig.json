@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+     "target": "ES2019",
+     "module": "ESNext",
+     "declaration": true,
+     "outDir": "./dist/",
+     "strict": true,
+     "moduleResolution": "node",
+     "typeRoots": ["./types"],
+     "esModuleInterop": true,
+     "forceConsistentCasingInFileNames": true,
+     "noImplicitAny": true,
+     "skipLibCheck": true,
+     "sourceMap": true
+  },
+  "include": ["lib"],
+  "exclude": ["test"],
+}
